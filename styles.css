@@ -1,0 +1,362 @@
+/* Reset default browser styling */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of reset default browser styling */
+
+html {
+  background-color: #000000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin: 0 auto;
+  max-width: 485px;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+figcaption,
+label,
+input,
+small {
+  font-size: 1em;
+}
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  padding: 8px;
+}
+
+nav a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+a[href="#top"] {
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 8px 4px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+header h1 {
+  background: #ffffff;
+  color: #007d7b;
+  padding: 16px 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+figure {
+  position: relative;
+}
+
+figure figcaption {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+figure:nth-of-type(1) figcaption,
+figure:nth-of-type(3) figcaption,
+figure:nth-of-type(6) figcaption,
+figure:nth-of-type(7) figcaption {
+  top: auto;
+  bottom: 20px;
+}
+
+figure:nth-of-type(12n + 1) figcaption,
+figure:nth-of-type(12n + 2) figcaption,
+figure:nth-of-type(12n + 3) figcaption,
+figure:nth-of-type(12n + 7) figcaption,
+figure:nth-of-type(12n + 12) figcaption {
+  color: #ffffff;
+}
+
+#about {
+  background: #ffffff;
+}
+
+#about,
+#gallery {
+  padding: 16px 8px 0;
+}
+
+#about p,
+#gallery p {
+  padding-bottom: 8px;
+}
+
+#gallery {
+  background: #ffffff;
+  margin-bottom: 8px;
+}
+
+.images {
+  display: grid;
+  column-gap: 12px;
+  row-gap: 14px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#gallery figcaption {
+  text-align: center;
+}
+
+#contact {
+  color: #ffffff;
+  padding: 8px 0 64px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact input,
+footer textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+#contact label {
+  padding-left: 8px;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  color: #007d7b;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#contact button {
+  padding: 10px 20px;
+  background-color: #007d7b;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 16px;
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#contact h3 {
+  visibility: hidden;
+}
+
+#contact p {
+  text-align: center;
+  padding: 16px 0;
+}
+
+footer {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  body {
+    max-width: 880px;
+  }
+  header h1 {
+    text-align: left;
+  }
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    max-width: 1300px;
+  }
+  header h1 {
+    text-align: left;
+  }
+  nav {
+    justify-content: right;
+  }
+  .images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
