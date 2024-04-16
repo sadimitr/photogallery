@@ -165,7 +165,7 @@ nav ul {
   list-style: none;
 }
 
-nav li {
+nav li:not(:last-of-type) {
   display: inline;
   padding: 8px;
 }
@@ -202,6 +202,7 @@ a[href="#top"] {
   position: fixed;
   bottom: 0px;
   right: 0px;
+  z-index: 2;
 }
 
 header h1 {
