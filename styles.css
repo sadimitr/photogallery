@@ -263,6 +263,7 @@ figure:nth-of-type(12n + 12) figcaption {
   display: grid;
   column-gap: 12px;
   row-gap: 14px;
+  padding-bottom: 12px;
 }
 
 img {
@@ -277,13 +278,17 @@ img {
 #contact {
   color: #ffffff;
   padding: 8px 0 64px;
+  margin: 0 auto;
+}
+
+form {
   width: 80%;
   margin: 0 auto;
+  display: grid;
 }
 
 #contact input,
 footer textarea {
-  width: 100%;
   padding: 10px;
   margin-bottom: 24px;
 }
